@@ -1,6 +1,15 @@
 import React from 'react';
 import { Target } from 'lucide-react';
 import type { AssessmentResult, LeadershipStyle } from '../types';
+import {
+    ResponsiveContainer,
+    RadarChart,
+    PolarGrid,
+    PolarAngleAxis,
+    PolarRadiusAxis,
+    Radar,
+    Tooltip
+} from 'recharts';
 
 interface ResultsPageProps {
     results: AssessmentResult[];
@@ -92,6 +101,26 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
                                         })}
                                     </div>
                                 </div>
+                            </div>
+
+                            {/* Radar Chart Visualization */}
+                            <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 border border-gray-100">
+                                <h3 className="text-lg font-bold text-gray-800 mb-4">Leadership Style Radar</h3>
+                                <ResponsiveContainer width="100%" height={350}>
+                                    <RadarChart outerRadius={120} data={results}>
+                                        <PolarGrid />
+                                        <PolarAngleAxis dataKey="style" />
+                                        <PolarRadiusAxis />
+                                        <Radar
+                                            name="Score"
+                                            dataKey="score"
+                                            stroke="#4F46E5"
+                                            fill="#6366F1"
+                                            fillOpacity={0.6}
+                                        />
+                                        <Tooltip />
+                                    </RadarChart>
+                                </ResponsiveContainer>
                             </div>
                         </div>
 
@@ -191,4 +220,4 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
     );
 };
 
-export default ResultsPage; 
+export default ResultsPage;

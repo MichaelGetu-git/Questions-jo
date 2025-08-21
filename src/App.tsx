@@ -7,7 +7,6 @@ import Header from './components/Header';
 import QuestionCard from './components/QuestionCard';
 import ResultsPage from './components/ResultsPage';
 import DesktopSidebar from './components/DesktopSidebar';
-import MobileInsights from './components/MobileInsights';
 
 const LeadershipQuestionnaire: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -74,10 +73,14 @@ const LeadershipQuestionnaire: React.FC = () => {
     setCurrentTopStyle(topStyle);
   }, [answers]);
 
+  // This now only stores the answer, doesn't advance
   const handleAnswer = (option: any) => {
     const newAnswers = { ...answers, [currentQuestion]: option };
     setAnswers(newAnswers);
-    
+  };
+
+  // New function to handle advancing to next question
+  const handleNext = () => {
     const newProgress = ((currentQuestion + 1) / questions.length) * 100;
     setProgress(newProgress);
     
@@ -148,7 +151,7 @@ const LeadershipQuestionnaire: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <Header />
 
-        <div className="flex items-center justify-center">
+        <div className="grid lg:grid-cols-3 gap-6">
           <QuestionCard
             question={questions[currentQuestion]}
             currentQuestion={currentQuestion}
@@ -156,15 +159,16 @@ const LeadershipQuestionnaire: React.FC = () => {
             progress={progress}
             onAnswer={handleAnswer}
             onPrevious={handlePrevious}
+            onNext={handleNext}
           />
 
+          <DesktopSidebar 
+            currentTopStyle={currentTopStyle}
+            leadershipStyles={leadershipStyles}
+            answers={answers}
+          />
         </div>
-
-        <MobileInsights 
-          currentTopStyle={currentTopStyle}
-          leadershipStyles={leadershipStyles}
-          answers={answers}
-        />
+        
       </div>
     </div>
   );
