@@ -301,256 +301,280 @@ export const questions = [
       ]
     },
     {
-        id: 26,
-        category: "Innovative",
-        text: "I am comfortable taking risks.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 1, innovative: 0, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 3, innovative: 3, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 0 } }
-        ]
-    } 
-    ,{
-        id: 27,
-        category: "Bureaucratic",
-        text: "Teams perform best when individuals repeat tasks and perfect them.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 2, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 2, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 1, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 3, democratic: 1, affiliative: 2, coaching: 1, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 28,
-        category: "Coaching",
-        text: "The best way to motivate others is to invest time in them.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 29,
-        category: "Affiliative",
-        text: "I recognize the unique emotional needs of those I lead.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 30,
-        category: "Altruistic",
-        text: "I am committed to building community.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 1, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 31,
-        category: "Authoritative",
-        text: "I clearly articulate a vision.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 2, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 3, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 3, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 32,
-        category: "Democratic",
-        text: "The combined knowledge and expertise of the team leads to the best results.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 33,
-        category: "Pacesetting",
-        text: "I expect nothing less than the best results from people.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 2, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 34,
-        category: "Affiliative",
-        text: "I accept and recognize people for their uniqueness.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 35,
-        category: "Innovative",
-        text: "I enjoy thinking about the future.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 1, innovative: 0, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 3, innovative: 3, pacesetting: 3, democratic: 2, affiliative: 1, coaching: 3, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 36,
-        category: "Bureaucratic",
-        text: "Everyone should follow policy and procedures very closely.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 1, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 1, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 2, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 2, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 37,
-        category: "Coaching",
-        text: "I give motivational feedback.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 0, coaching: 0, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 38,
-        category: "Authoritative",
-        text: "I take full responsibility when my team actions.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 39,
-        category: "Pacesetting",
-        text: "I motivate others by setting a high standard of performance.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 2, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 40,
-        category: "Pacesetting",
-        text: "I have a passion for pursuing excellence.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 0, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 3, democratic: 2, affiliative: 1, coaching: 3, altruistic: 1 } }
-        ]
-      },
-      {
-        id: 41,
-        category: "Coaching",
-        text: "I take time to learn what others need from me.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 42,
-        category: "Democratic",
-        text: "I am comfortable allowing others to occasionally take the lead.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 3, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 43,
-        category: "Democratic",
-        text: "I empower others by providing them the opportunity to contribute to the decision-making process.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 44,
-        category: "Affiliative",
-        text: "I take pride in my ability to keep employees happy.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 0, coaching: 1, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 3, coaching: 2, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 45,
-        category: "Altruistic",
-        text: "I promote and support the success of others.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 46,
-        category: "Democratic",
-        text: "Every team member needs to be heard and respected.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 1, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 47,
-        category: "Altruistic",
-        text: "I would not expect others to do a task I am not prepared to do myself.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 0 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 3, democratic: 2, affiliative: 2, coaching: 2, altruistic: 3 } }
-        ]
-      },
-      {
-        id: 48,
-        category: "Pacesetting",
-        text: "I expect people to perform at 100 percent regardless of circumstances.",
-        options: [
-          { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
-          { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
-          { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
-          { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
-        ]
-      }
+      id: 26,
+      category: "Innovative",
+      text: "I am comfortable taking risks.",
+      explanation: "Assesses innovative/visionary orientation by gauging comfort with uncertainty, experimentation, and calculated risk-taking.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 1, innovative: 0, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 3, innovative: 3, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 0 } }
+      ]
+    },
+    {
+      id: 27,
+      category: "Bureaucratic",
+      text: "Teams perform best when individuals repeat tasks and perfect them.",
+      explanation: "Evaluates preference for standardization, repetition, and process discipline—hallmarks of a bureaucratic, efficiency-first approach.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 2, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 2, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 1, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 3, democratic: 1, affiliative: 2, coaching: 1, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 28,
+      category: "Coaching",
+      text: "The best way to motivate others is to invest time in them.",
+      explanation: "Captures a coaching mindset that emphasizes individualized attention, development, and relationship-building to inspire performance.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 29,
+      category: "Affiliative",
+      text: "I recognize the unique emotional needs of those I lead.",
+      explanation: "Measures affiliative leadership by focusing on empathy, emotional awareness, and maintaining positive relationships within the team.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 30,
+      category: "Altruistic",
+      text: "I am committed to building community.",
+      explanation: "Assesses servant/altruistic orientation by prioritizing community, belonging, and shared support beyond immediate tasks.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 1, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 31,
+      category: "Authoritative",
+      text: "I clearly articulate a vision.",
+      explanation: "Evaluates authoritative/visionary leadership by emphasizing clarity of direction, purpose, and alignment around a compelling future state.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 2, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 3, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 3, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 32,
+      category: "Democratic",
+      text: "The combined knowledge and expertise of the team leads to the best results.",
+      explanation: "Assesses democratic orientation by valuing participation, shared expertise, and collective intelligence in decision-making.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 33,
+      category: "Pacesetting",
+      text: "I expect nothing less than the best results from people.",
+      explanation: "Measures pacesetting leadership by stressing relentless standards and a strong results-first performance ethic.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 2, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 34,
+      category: "Affiliative",
+      text: "I accept and recognize people for their uniqueness.",
+      explanation: "Evaluates affiliative style by prioritizing appreciation of individuality, inclusion, and psychological safety.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 35,
+      category: "Innovative",
+      text: "I enjoy thinking about the future.",
+      explanation: "Assesses future-orientation and creativity, indicating comfort with visioning, foresight, and innovation.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 1, innovative: 0, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 3, innovative: 3, pacesetting: 3, democratic: 2, affiliative: 1, coaching: 3, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 36,
+      category: "Bureaucratic",
+      text: "Everyone should follow policy and procedures very closely.",
+      explanation: "Measures preference for rules, compliance, and consistency—core attributes of a bureaucratic orientation.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 0, authoritative: 1, innovative: 3, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 1, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 1, coaching: 1, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 2, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 1, affiliative: 2, coaching: 2, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 37,
+      category: "Coaching",
+      text: "I give motivational feedback.",
+      explanation: "Captures a coaching approach focused on constructive, timely feedback that builds capability and confidence.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 0, coaching: 0, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 38,
+      category: "Authoritative",
+      text: "I take full responsibility when my team actions.",
+      explanation: "Assesses accountability and ownership characteristic of authoritative leaders who stand behind team outcomes.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 39,
+      category: "Pacesetting",
+      text: "I motivate others by setting a high standard of performance.",
+      explanation: "Evaluates pacesetting by emphasizing ambitious benchmarks and leading through exemplary output and speed.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 2, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 40,
+      category: "Pacesetting",
+      text: "I have a passion for pursuing excellence.",
+      explanation: "Assesses a pacesetting drive for excellence, continuous improvement, and uncompromising quality standards.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 0, innovative: 1, pacesetting: 0, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 2, coaching: 1, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 1, coaching: 2, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 3, democratic: 2, affiliative: 1, coaching: 3, altruistic: 1 } }
+      ]
+    },
+    {
+      id: 41,
+      category: "Coaching",
+      text: "I take time to learn what others need from me.",
+      explanation: "Measures coaching orientation by focusing on needs discovery, support, and tailoring guidance to individuals.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 42,
+      category: "Democratic",
+      text: "I am comfortable allowing others to occasionally take the lead.",
+      explanation: "Assesses democratic tendencies by valuing shared leadership, rotating roles, and distributed ownership.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 3, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 43,
+      category: "Democratic",
+      text: "I empower others by providing them the opportunity to contribute to the decision-making process.",
+      explanation: "Measures democratic leadership by emphasizing participation, empowerment, and inclusive decision processes.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 3, innovative: 0, pacesetting: 2, democratic: 0, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 0, innovative: 3, pacesetting: 1, democratic: 3, affiliative: 2, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 44,
+      category: "Affiliative",
+      text: "I take pride in my ability to keep employees happy.",
+      explanation: "Assesses affiliative focus on morale, harmony, and maintaining supportive, people-first team climates.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 0, coaching: 1, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 3, coaching: 2, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 45,
+      category: "Altruistic",
+      text: "I promote and support the success of others.",
+      explanation: "Measures servant/altruistic leadership by prioritizing others’ growth, recognition, and long-term success.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 3, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 0, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 0, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 46,
+      category: "Democratic",
+      text: "Every team member needs to be heard and respected.",
+      explanation: "Assesses democratic inclusion by valuing voice, respect, and equitable participation across the team.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 0, affiliative: 0, coaching: 1, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 3, affiliative: 3, coaching: 3, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 47,
+      category: "Altruistic",
+      text: "I would not expect others to do a task I am not prepared to do myself.",
+      explanation: "Evaluates servant/altruistic leadership through humility, example-setting, and willingness to share burdens with the team.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 0 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 2, authoritative: 1, innovative: 1, pacesetting: 1, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 1, authoritative: 2, innovative: 2, pacesetting: 2, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 1, authoritative: 3, innovative: 2, pacesetting: 3, democratic: 2, affiliative: 2, coaching: 2, altruistic: 3 } }
+      ]
+    },
+    {
+      id: 48,
+      category: "Pacesetting",
+      text: "I expect people to perform at 100 percent regardless of circumstances.",
+      explanation: "Measures pacesetting intensity by emphasizing unwavering standards and constant high output irrespective of obstacles.",
+      options: [
+        { text: "Not at all", value: "not_at_all", points: { bureaucratic: 1, authoritative: 0, innovative: 2, pacesetting: 0, democratic: 2, affiliative: 3, coaching: 2, altruistic: 2 } },
+        { text: "Slightly", value: "slightly", points: { bureaucratic: 1, authoritative: 1, innovative: 2, pacesetting: 1, democratic: 2, affiliative: 2, coaching: 2, altruistic: 2 } },
+        { text: "Moderately", value: "moderately", points: { bureaucratic: 2, authoritative: 2, innovative: 1, pacesetting: 2, democratic: 1, affiliative: 1, coaching: 1, altruistic: 1 } },
+        { text: "Completely", value: "completely", points: { bureaucratic: 3, authoritative: 3, innovative: 1, pacesetting: 3, democratic: 1, affiliative: 0, coaching: 1, altruistic: 1 } }
+      ]
+    }
+    
     ];
