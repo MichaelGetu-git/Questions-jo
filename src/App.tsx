@@ -6,14 +6,13 @@ import type { AssessmentResult } from './types';
 import Header from './components/Header';
 import QuestionCard from './components/QuestionCard';
 import ResultsPage from './components/ResultsPage';
-import DesktopSidebar from './components/DesktopSidebar';
 
 const LeadershipQuestionnaire: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, any>>({});
   const [showResults, setShowResults] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [currentTopStyle, setCurrentTopStyle] = useState<string | null>(null);
+  const [_, setCurrentTopStyle] = useState<string | null>(null);
 
   useEffect(() => {
     const savedProgress = localStorage.getItem('leadershipAssessmentProgress');
