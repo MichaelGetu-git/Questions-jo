@@ -107,20 +107,29 @@ const ResultsPage: React.FC<ResultsPageProps> = ({
                             <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-800 mb-4">Leadership Style Radar</h3>
                                 <ResponsiveContainer width="100%" height={350}>
-                                    <RadarChart outerRadius={120} data={results}>
+                                    <RadarChart
+                                        outerRadius="70%"
+                                        data={results}
+                                        margin={{ right: 15, left: 15 }}
+                                    >
                                         <PolarGrid />
-                                        <PolarAngleAxis dataKey="style" />
+                                        <PolarAngleAxis
+                                            dataKey="style"
+                                            tick={{ fontSize: 8, fill: "#374151" }}
+                                        />
                                         <PolarRadiusAxis />
                                         <Radar
                                             name="Score"
                                             dataKey="score"
-                                            stroke="#4F46E5"
-                                            fill="#6366F1"
+                                            stroke="#374151"
+                                            fill="#7C3AED"
                                             fillOpacity={0.6}
                                         />
                                         <Tooltip />
                                     </RadarChart>
                                 </ResponsiveContainer>
+
+
                             </div>
                         </div>
 
