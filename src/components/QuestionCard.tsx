@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Question } from '../types';
 
@@ -9,6 +9,7 @@ interface QuestionCardProps {
   progress: number;
   onAnswer: (option: any) => void;
   onPrevious: () => void;
+  onNext: () => void;
 }
 
 const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -17,8 +18,24 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
   totalQuestions,
   progress,
   onAnswer,
-  onPrevious
+  onPrevious,
+  onNext
 }) => {
+  const [selectedOption, setSelectedOption] = useState<any>(null);
+
+  const handleOptionSelect = (option: any) => {
+    setSelectedOption(option);
+    // Don't call onAnswer here - only store the selection
+  };
+
+  const handleNext = () => {
+    if (selectedOption) {
+      onAnswer(selectedOption); // Call onAnswer only when Next is clicked
+      onNext();
+      setSelectedOption(null); // Reset selection for next question
+    }
+  };
+
   return (
     <div className="lg:col-span-2">
       <div className="mb-4 lg:mb-6">
@@ -60,18 +77,29 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
           </div>
         </div>
 
-        <div className="space-y-2 lg:space-y-3">
+        {/* Options in row format */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
           {question.options.map((option, index) => (
             <button
               key={index}
-              onClick={() => onAnswer(option)}
-              className="w-full text-left p-3 lg:p-4 rounded-xl border-2 border-gray-200 hover:border-indigo-400 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-indigo-200 focus:border-indigo-500 bg-white hover:shadow-lg shadow-md"
+              onClick={() => handleOptionSelect(option)}
+              className={`text-center p-3 lg:p-4 rounded-xl border-2 transition-all duration-300 transform hover:scale-[1.05] focus:outline-none focus:ring-4 focus:ring-indigo-200 shadow-md hover:shadow-lg ${
+                selectedOption === option
+                  ? 'border-indigo-500 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800'
+                  : 'border-gray-200 hover:border-indigo-400 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 bg-white text-gray-800'
+              }`}
             >
-              <div className="flex items-center justify-between">
-                <span className="text-gray-800 font-semibold text-sm lg:text-base">{option.text}</span>
-                <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full text-white shadow-md">
-                  <ChevronRight className="w-3 h-3" />
+              <div className="flex flex-col items-center space-y-2">
+                <div className={`flex items-center justify-center w-8 h-8 rounded-full shadow-md ${
+                  selectedOption === option
+                    ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white'
+                    : 'bg-gradient-to-r from-yellow-500 to-orange-600 text-white'
+                }`}>
+                  <span className="text-sm font-bold">{String.fromCharCode(65 + index)}</span>
                 </div>
+                <span className="font-semibold text-sm lg:text-base leading-tight">
+                  {option.text}
+                </span>
               </div>
             </button>
           ))}
@@ -91,9 +119,22 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
           <ChevronLeft className="w-4 h-4 mr-2" />
           Previous
         </button>
+
+        <button
+          onClick={handleNext}
+          disabled={!selectedOption}
+          className={`flex items-center px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-sm ${
+            selectedOption
+              ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 shadow-lg hover:shadow-xl transform hover:scale-105'
+              : 'text-gray-400 cursor-not-allowed bg-gray-100'
+          }`}
+        >
+          Next
+          <ChevronRight className="w-4 h-4 ml-2" />
+        </button>
       </div>
     </div>
   );
 };
 
-export default QuestionCard; 
+export default QuestionCard;

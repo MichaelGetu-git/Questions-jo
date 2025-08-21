@@ -148,7 +148,7 @@ const LeadershipQuestionnaire: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <Header />
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="flex items-center justify-center">
           <QuestionCard
             question={questions[currentQuestion]}
             currentQuestion={currentQuestion}
@@ -158,11 +158,6 @@ const LeadershipQuestionnaire: React.FC = () => {
             onPrevious={handlePrevious}
           />
 
-          <DesktopSidebar 
-            currentTopStyle={currentTopStyle}
-            leadershipStyles={leadershipStyles}
-            answers={answers}
-          />
         </div>
 
         <MobileInsights 
